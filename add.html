@@ -1,0 +1,36 @@
+<html>
+<head>
+	<title>Add Data</title>
+</head>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<body class="container" style="background-color: #fafad2">
+		<div style="margin-left: 200px;"><a href="index.php" style="font-size: 25px;">Home</a></div>
+		<div class="box">
+			<h3 style="text-align: center;">Add User</h3>
+			<div class="div-nest">
+				<form action="add.php" method="post" name="form1" enctype="multipart/form-data">
+					<div class="input-w div-marg" >
+					    <label class="inputlabel lab-marg">Name</label>
+					    <input type="text" name="name" required>
+					</div>
+					<div class="input-w div-marg">
+					    <label class="inputlabel lab-marg">Age</label>
+					    <input type="text" name="age" required>
+					</div>
+					<div class="input-w div-marg">
+					    <label class="inputlabel lab-marg ">Email</label>
+					    <input type="text" name="email" required>
+					</div>
+					<div class="input-w div-marg">
+					    <label class="inputlabel lab-marg">Photo</label>
+					    <input type="file" name="image" required>
+					</div>
+					<div class="input-w div-marg">
+					    <button type="submit" name="Submit" style="margin-left: 205px;" value="Add">Add</button>
+					</div>
+				</form>	
+			</div>	
+		</div>	
+	</body>
+</html>
+
