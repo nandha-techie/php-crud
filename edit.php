@@ -7,7 +7,7 @@
 		$name = $_POST['name'];
 		$age = $_POST['age'];
 		$email = $_POST['email'];
-		if(isset($_FILES['image']) AND !empty($_FILES['image'])){
+		if(isset($_FILES['image']) AND !empty($_FILES['image']['name'])){
 			$uploaddir = 'uploads/';
 			$uploadfile = $uploaddir .time().'-'. basename($_FILES['image']['name']);
 			move_uploaded_file($_FILES['image']['tmp_name'], $uploadfile);
